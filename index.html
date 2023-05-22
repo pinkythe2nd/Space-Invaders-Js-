@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space Invaders</title>
+        <link rel="shortcut icon" href="media/favicon.ico" />
+    </head>
+    <body>
+        <header> 
+            <h1 id=maintitle>SPACE INVADERS!</h1>
+        </header>
+        <main>
+            <div id="parent">
+                <div id="firstdiv">
+                    <h2 id="score">0</h2>
+                </div>
+                <div id="canvas-container">
+                    <canvas id="canvas">your browser doesnt support canvas</canvas>
+                </div>
+                <audio id="player" loop autoplay>
+                    <source src="media/spaceinvaders1.mpeg" type="audio/mpeg"> <!-- absolute tune-->
+                </audio>
+                <div id="thirddiv">
+                    <button class="coolbutton" onclick="document.getElementById('player').play()">Play</button>
+                    <button class="coolbutton" onclick="document.getElementById('player').pause()">Pause</button>
+                    <br>
+                    <p1>controls are <strong>left</strong> and <strong>right</strong> to move, 
+                        <strong>space</strong> to shoot, <strong>R</strong> to restart
+                    </p1>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>
